@@ -1,6 +1,6 @@
-package fuzs.permanentsponges.world.level.block;
+package fuzs.permanentsponges.common.world.level.block;
 
-import fuzs.permanentsponges.util.LiquidAbsorptionHelper;
+import fuzs.permanentsponges.common.util.LiquidAbsorptionHelper;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.TickTask;
 import net.minecraft.server.level.ServerLevel;

@@ -1,9 +1,10 @@
 {
+    "minecraft": "26.1.2",
     "mod": {
         "id": "permanentsponges",
         "group": "fuzs.permanentsponges",
         "name": "Permanent Sponges",
-        "version": "21.11.0",
+        "version": "26.1.0",
         "authors": [
             "Fuzs"
         ],
@@ -36,13 +37,13 @@
     ],
     "links": [
         {
-            "name": "github",
-            "slug": "permanentsponges"
-        },
-        {
             "name": "curseforge",
             "slug": "permanent-sponges",
             "id": "852664"
+        },
+        {
+            "name": "github",
+            "slug": "permanent-sponges"
         },
         {
             "name": "modrinth",

@@ -1,11 +1,11 @@
-package fuzs.permanentsponges.world.item;
+package fuzs.permanentsponges.common.world.item;
 
-import fuzs.permanentsponges.PermanentSponges;
-import fuzs.permanentsponges.config.ServerConfig;
-import fuzs.permanentsponges.world.level.block.PermanentSpongeBlock;
-import fuzs.permanentsponges.world.level.block.SpongeMaterial;
-import fuzs.puzzleslib.api.item.v2.ItemHelper;
-import fuzs.puzzleslib.api.util.v1.InteractionResultHelper;
+import fuzs.permanentsponges.common.PermanentSponges;
+import fuzs.permanentsponges.common.config.ServerConfig;
+import fuzs.permanentsponges.common.world.level.block.PermanentSpongeBlock;
+import fuzs.permanentsponges.common.world.level.block.SpongeMaterial;
+import fuzs.puzzleslib.common.api.item.v2.ItemHelper;
+import fuzs.puzzleslib.common.api.util.v1.InteractionResultHelper;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;

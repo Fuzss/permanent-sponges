@@ -1,9 +1,9 @@
-package fuzs.permanentsponges.util;
+package fuzs.permanentsponges.common.util;
 
 import com.google.common.base.Predicates;
-import fuzs.permanentsponges.core.CommonAbstractions;
-import fuzs.permanentsponges.init.ModRegistry;
-import fuzs.permanentsponges.world.level.block.SpongeMaterial;
+import fuzs.permanentsponges.common.core.CommonAbstractions;
+import fuzs.permanentsponges.common.init.ModRegistry;
+import fuzs.permanentsponges.common.world.level.block.SpongeMaterial;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import net.minecraft.core.BlockPos;

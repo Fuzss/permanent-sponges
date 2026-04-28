@@ -1,6 +1,6 @@
-package fuzs.permanentsponges.core;
+package fuzs.permanentsponges.common.core;
 
-import fuzs.puzzleslib.api.core.v1.ServiceProviderHelper;
+import fuzs.puzzleslib.common.api.core.v1.ServiceProviderHelper;
 import net.minecraft.world.level.material.Fluid;
 
 public interface CommonAbstractions {

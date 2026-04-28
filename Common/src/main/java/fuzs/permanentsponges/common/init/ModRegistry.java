@@ -1,11 +1,11 @@
-package fuzs.permanentsponges.init;
+package fuzs.permanentsponges.common.init;
 
-import fuzs.permanentsponges.PermanentSponges;
-import fuzs.permanentsponges.world.item.HandheldSpongeItem;
-import fuzs.permanentsponges.world.level.block.PermanentSpongeBlock;
-import fuzs.permanentsponges.world.level.block.SpongeMaterial;
-import fuzs.puzzleslib.api.init.v3.registry.RegistryManager;
-import fuzs.puzzleslib.api.init.v3.tags.TagFactory;
+import fuzs.permanentsponges.common.PermanentSponges;
+import fuzs.permanentsponges.common.world.item.HandheldSpongeItem;
+import fuzs.permanentsponges.common.world.level.block.PermanentSpongeBlock;
+import fuzs.permanentsponges.common.world.level.block.SpongeMaterial;
+import fuzs.puzzleslib.common.api.init.v3.registry.RegistryManager;
+import fuzs.puzzleslib.common.api.init.v3.tags.TagFactory;
 import net.minecraft.core.Holder;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.ai.village.poi.PoiType;

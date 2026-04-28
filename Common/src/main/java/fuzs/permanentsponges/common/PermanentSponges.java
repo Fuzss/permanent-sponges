@@ -1,11 +1,11 @@
-package fuzs.permanentsponges;
+package fuzs.permanentsponges.common;
 
-import fuzs.permanentsponges.config.ServerConfig;
-import fuzs.permanentsponges.handler.TryEmptyBucketHandler;
-import fuzs.permanentsponges.init.ModRegistry;
-import fuzs.puzzleslib.api.config.v3.ConfigHolder;
-import fuzs.puzzleslib.api.core.v1.ModConstructor;
-import fuzs.puzzleslib.api.event.v1.entity.player.PlayerInteractEvents;
+import fuzs.permanentsponges.common.config.ServerConfig;
+import fuzs.permanentsponges.common.handler.TryEmptyBucketHandler;
+import fuzs.permanentsponges.common.init.ModRegistry;
+import fuzs.puzzleslib.common.api.config.v3.ConfigHolder;
+import fuzs.puzzleslib.common.api.core.v1.ModConstructor;
+import fuzs.puzzleslib.common.api.event.v1.entity.player.PlayerInteractEvents;
 import net.minecraft.resources.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

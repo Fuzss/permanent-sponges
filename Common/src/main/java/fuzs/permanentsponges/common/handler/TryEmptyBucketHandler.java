@@ -1,10 +1,10 @@
-package fuzs.permanentsponges.handler;
+package fuzs.permanentsponges.common.handler;
 
-import fuzs.permanentsponges.PermanentSponges;
-import fuzs.permanentsponges.config.ServerConfig;
-import fuzs.permanentsponges.util.LiquidAbsorptionHelper;
-import fuzs.puzzleslib.api.event.v1.core.EventResultHolder;
-import fuzs.puzzleslib.api.util.v1.InteractionResultHelper;
+import fuzs.permanentsponges.common.PermanentSponges;
+import fuzs.permanentsponges.common.config.ServerConfig;
+import fuzs.permanentsponges.common.util.LiquidAbsorptionHelper;
+import fuzs.puzzleslib.common.api.event.v1.core.EventResultHolder;
+import fuzs.puzzleslib.common.api.util.v1.InteractionResultHelper;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

@@ -1,10 +1,10 @@
 package fuzs.permanentsponges.neoforge;
 
-import fuzs.permanentsponges.PermanentSponges;
-import fuzs.permanentsponges.data.ModBlockLootProvider;
-import fuzs.permanentsponges.data.ModBlockTagProvider;
-import fuzs.permanentsponges.data.ModRecipeProvider;
-import fuzs.puzzleslib.api.core.v1.ModConstructor;
+import fuzs.permanentsponges.common.PermanentSponges;
+import fuzs.permanentsponges.common.data.ModBlockLootProvider;
+import fuzs.permanentsponges.common.data.ModBlockTagProvider;
+import fuzs.permanentsponges.common.data.ModRecipeProvider;
+import fuzs.puzzleslib.common.api.core.v1.ModConstructor;
 import fuzs.puzzleslib.neoforge.api.data.v2.core.DataProviderHelper;
 import net.neoforged.fml.common.Mod;
 

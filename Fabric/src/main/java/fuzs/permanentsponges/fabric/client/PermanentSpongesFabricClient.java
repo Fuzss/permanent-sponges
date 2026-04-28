@@ -1,8 +1,8 @@
 package fuzs.permanentsponges.fabric.client;
 
-import fuzs.permanentsponges.PermanentSponges;
-import fuzs.permanentsponges.client.PermanentSpongesClient;
-import fuzs.puzzleslib.api.client.core.v1.ClientModConstructor;
+import fuzs.permanentsponges.common.PermanentSponges;
+import fuzs.permanentsponges.common.client.PermanentSpongesClient;
+import fuzs.puzzleslib.common.api.client.core.v1.ClientModConstructor;
 import net.fabricmc.api.ClientModInitializer;
 
 public class PermanentSpongesFabricClient implements ClientModInitializer {

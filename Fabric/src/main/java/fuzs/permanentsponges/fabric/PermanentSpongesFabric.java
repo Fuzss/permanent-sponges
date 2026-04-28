@@ -1,7 +1,7 @@
 package fuzs.permanentsponges.fabric;
 
-import fuzs.permanentsponges.PermanentSponges;
-import fuzs.puzzleslib.api.core.v1.ModConstructor;
+import fuzs.permanentsponges.common.PermanentSponges;
+import fuzs.puzzleslib.common.api.core.v1.ModConstructor;
 import net.fabricmc.api.ModInitializer;
 
 public class PermanentSpongesFabric implements ModInitializer {

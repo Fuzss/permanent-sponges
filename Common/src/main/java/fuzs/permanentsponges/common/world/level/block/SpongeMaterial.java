@@ -1,8 +1,8 @@
-package fuzs.permanentsponges.world.level.block;
+package fuzs.permanentsponges.common.world.level.block;
 
-import fuzs.permanentsponges.PermanentSponges;
-import fuzs.permanentsponges.config.ServerConfig;
-import fuzs.permanentsponges.init.ModRegistry;
+import fuzs.permanentsponges.common.PermanentSponges;
+import fuzs.permanentsponges.common.config.ServerConfig;
+import fuzs.permanentsponges.common.init.ModRegistry;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.ai.village.poi.PoiType;
 
