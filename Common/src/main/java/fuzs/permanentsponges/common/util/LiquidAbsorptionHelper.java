@@ -1,7 +1,7 @@
 package fuzs.permanentsponges.common.util;
 
 import com.google.common.base.Predicates;
-import fuzs.permanentsponges.common.core.CommonAbstractions;
+import fuzs.permanentsponges.common.services.CommonAbstractions;
 import fuzs.permanentsponges.common.init.ModRegistry;
 import fuzs.permanentsponges.common.world.level.block.SpongeMaterial;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;

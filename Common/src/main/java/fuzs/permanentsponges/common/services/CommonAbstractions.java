@@ -1,4 +1,4 @@
-package fuzs.permanentsponges.common.core;
+package fuzs.permanentsponges.common.services;
 
 import fuzs.puzzleslib.common.api.core.v1.ServiceProviderHelper;
 import net.minecraft.world.level.material.Fluid;

@@ -1,8 +1,8 @@
 package fuzs.permanentsponges.neoforge;
 
 import fuzs.permanentsponges.common.PermanentSponges;
-import fuzs.permanentsponges.common.data.ModBlockLootProvider;
-import fuzs.permanentsponges.common.data.ModBlockTagProvider;
+import fuzs.permanentsponges.common.data.loot.ModBlockLootProvider;
+import fuzs.permanentsponges.common.data.tags.ModBlockTagProvider;
 import fuzs.permanentsponges.common.data.ModRecipeProvider;
 import fuzs.puzzleslib.common.api.core.v1.ModConstructor;
 import fuzs.puzzleslib.neoforge.api.data.v2.core.DataProviderHelper;

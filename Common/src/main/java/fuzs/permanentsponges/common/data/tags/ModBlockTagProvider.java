@@ -1,4 +1,4 @@
-package fuzs.permanentsponges.common.data;
+package fuzs.permanentsponges.common.data.tags;
 
 import fuzs.permanentsponges.common.init.ModRegistry;
 import fuzs.puzzleslib.common.api.data.v2.core.DataProviderContext;

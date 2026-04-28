@@ -1,6 +1,6 @@
 package fuzs.permanentsponges.fabric.core;
 
-import fuzs.permanentsponges.common.core.CommonAbstractions;
+import fuzs.permanentsponges.common.services.CommonAbstractions;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariantAttributes;
 import net.minecraft.world.level.material.Fluid;
