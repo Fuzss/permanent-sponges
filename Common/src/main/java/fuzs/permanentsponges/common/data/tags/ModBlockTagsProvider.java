@@ -8,17 +8,16 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
 
-public class ModBlockTagProvider extends AbstractTagProvider<Block> {
+public class ModBlockTagsProvider extends AbstractTagProvider<Block> {
 
-    public ModBlockTagProvider(DataProviderContext context) {
+    public ModBlockTagsProvider(DataProviderContext context) {
         super(Registries.BLOCK, context);
     }
 
     @Override
     public void addTags(HolderLookup.Provider provider) {
-        this.tag(BlockTags.MINEABLE_WITH_HOE)
-                .add(ModRegistry.AQUEOUS_SPONGE_BLOCK.value(), ModRegistry.MAGMATIC_SPONGE_BLOCK.value());
+        this.tag(BlockTags.MINEABLE_WITH_HOE).add(ModRegistry.AQUEOUS_SPONGE_BLOCK, ModRegistry.MAGMATIC_SPONGE_BLOCK);
         this.tag(ModRegistry.PERMANENT_SPONGES_BLOCK_TAG)
-                .add(ModRegistry.AQUEOUS_SPONGE_BLOCK.value(), ModRegistry.MAGMATIC_SPONGE_BLOCK.value());
+                .add(ModRegistry.AQUEOUS_SPONGE_BLOCK, ModRegistry.MAGMATIC_SPONGE_BLOCK);
     }
 }

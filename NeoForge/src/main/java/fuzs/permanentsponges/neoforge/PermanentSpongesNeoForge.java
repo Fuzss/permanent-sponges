@@ -2,7 +2,7 @@ package fuzs.permanentsponges.neoforge;
 
 import fuzs.permanentsponges.common.PermanentSponges;
 import fuzs.permanentsponges.common.data.loot.ModBlockLootProvider;
-import fuzs.permanentsponges.common.data.tags.ModBlockTagProvider;
+import fuzs.permanentsponges.common.data.tags.ModBlockTagsProvider;
 import fuzs.permanentsponges.common.data.ModRecipeProvider;
 import fuzs.puzzleslib.common.api.core.v1.ModConstructor;
 import fuzs.puzzleslib.neoforge.api.data.v2.core.DataProviderHelper;
@@ -15,7 +15,7 @@ public class PermanentSpongesNeoForge {
         ModConstructor.construct(PermanentSponges.MOD_ID, PermanentSponges::new);
         DataProviderHelper.registerDataProviders(PermanentSponges.MOD_ID,
                 ModBlockLootProvider::new,
-                ModBlockTagProvider::new,
+                ModBlockTagsProvider::new,
                 ModRecipeProvider::new
         );
     }

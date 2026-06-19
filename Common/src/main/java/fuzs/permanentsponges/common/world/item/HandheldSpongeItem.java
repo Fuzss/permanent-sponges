@@ -5,10 +5,10 @@ import fuzs.permanentsponges.common.config.ServerConfig;
 import fuzs.permanentsponges.common.world.level.block.PermanentSpongeBlock;
 import fuzs.permanentsponges.common.world.level.block.SpongeMaterial;
 import fuzs.puzzleslib.common.api.item.v2.ItemHelper;
-import fuzs.puzzleslib.common.api.util.v1.InteractionResultHelper;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -33,37 +33,43 @@ public class HandheldSpongeItem extends Item {
 
     @Override
     public InteractionResult use(Level level, Player player, InteractionHand interactionHand) {
-        ItemStack itemStack = player.getItemInHand(interactionHand);
+        ItemStack itemInHand = player.getItemInHand(interactionHand);
         BlockHitResult blockHitResult = getPlayerPOVHitResult(level, player, ClipContext.Fluid.ANY);
         if (blockHitResult.getType() == HitResult.Type.MISS) {
-            return InteractionResultHelper.pass(itemStack);
+            return InteractionResult.PASS;
         } else if (blockHitResult.getType() != HitResult.Type.BLOCK) {
-            return InteractionResultHelper.pass(itemStack);
+            return InteractionResult.PASS;
         } else {
             BlockPos blockPos = blockHitResult.getBlockPos();
             Direction direction = blockHitResult.getDirection();
             BlockPos blockPos2 = blockPos.relative(direction);
-            if (!level.mayInteract(player, blockPos) || !player.mayUseItemAt(blockPos2, direction, itemStack)) {
-                return InteractionResultHelper.fail(itemStack);
+            if (!level.mayInteract(player, blockPos) || !player.mayUseItemAt(blockPos2, direction, itemInHand)) {
+                return InteractionResult.FAIL;
             } else {
                 BlockState blockState = level.getBlockState(blockPos);
                 if (blockState.getBlock() instanceof BucketPickup bucketPickup) {
                     int cooldownTicks = PermanentSponges.CONFIG.get(ServerConfig.class).stickCooldownTicks;
                     if (cooldownTicks > 0) {
-                        player.getCooldowns().addCooldown(itemStack, cooldownTicks);
+                        player.getCooldowns().addCooldown(itemInHand, cooldownTicks);
                     }
+
                     if (level instanceof ServerLevel serverLevel) {
                         if (PermanentSpongeBlock.removeAllLiquid(this.spongeMaterial, serverLevel, blockPos, true)) {
-                            itemStack.setDamageValue(itemStack.getMaxDamage() - 1);
+                            itemInHand.setDamageValue(itemInHand.getMaxDamage() - 1);
                         }
-                        ItemHelper.hurtAndBreak(itemStack, 1, player, interactionHand);
+
+                        ItemHelper.hurtAndBreak(itemInHand, 1, player, interactionHand);
                     }
+
                     player.awardStat(Stats.ITEM_USED.get(this));
-                    bucketPickup.getPickupSound().ifPresent(soundEvent -> player.playSound(soundEvent, 1.0F, 1.0F));
+                    bucketPickup.getPickupSound().ifPresent((SoundEvent soundEvent) -> {
+                        player.playSound(soundEvent, 1.0F, 1.0F);
+                    });
                     level.gameEvent(player, GameEvent.FLUID_PICKUP, blockPos);
-                    return InteractionResultHelper.sidedSuccess(itemStack, level.isClientSide());
+                    return InteractionResult.SUCCESS.heldItemTransformedTo(itemInHand);
+                } else {
+                    return InteractionResult.FAIL;
                 }
-                return InteractionResultHelper.fail(itemStack);
             }
         }
     }
