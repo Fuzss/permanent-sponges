@@ -6,11 +6,17 @@
     "26.1.x": "maintained",
     "26.2.x": "primary"
   },
-  "properties": {
-    "distributions.curseforge.id": "852664",
-    "distributions.curseforge.slug": "permanent-sponges",
-    "distributions.github.slug": "permanent-sponges",
-    "distributions.modrinth.id": "p6prwv2Q",
-    "distributions.modrinth.slug": "permanent-sponges"
+  "distributions": {
+    "curseforge": {
+      "id": "852664",
+      "slug": "permanent-sponges"
+    },
+    "github": {
+      "slug": "permanent-sponges"
+    },
+    "modrinth": {
+      "id": "p6prwv2Q",
+      "slug": "permanent-sponges"
+    }
   }
 }
