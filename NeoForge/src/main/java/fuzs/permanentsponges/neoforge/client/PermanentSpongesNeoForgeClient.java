@@ -5,7 +5,7 @@ import fuzs.permanentsponges.common.client.PermanentSpongesClient;
 import fuzs.permanentsponges.common.data.client.ModLanguageProvider;
 import fuzs.permanentsponges.common.data.client.ModModelProvider;
 import fuzs.puzzleslib.common.api.client.core.v1.ClientModConstructor;
-import fuzs.puzzleslib.neoforge.api.data.v2.core.DataProviderHelper;
+import fuzs.puzzleslib.neoforge.api.data.v3.core.DataProviderBuilder;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.Mod;
 
@@ -14,9 +14,6 @@ public class PermanentSpongesNeoForgeClient {
 
     public PermanentSpongesNeoForgeClient() {
         ClientModConstructor.construct(PermanentSponges.MOD_ID, PermanentSpongesClient::new);
-        DataProviderHelper.registerDataProviders(PermanentSponges.MOD_ID,
-                ModModelProvider::new,
-                ModLanguageProvider::new
-        );
+        DataProviderBuilder.of(PermanentSponges.MOD_ID).addProvider(ModModelProvider::new, ModLanguageProvider::new);
     }
 }
