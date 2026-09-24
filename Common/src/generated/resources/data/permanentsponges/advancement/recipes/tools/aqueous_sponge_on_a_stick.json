@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "permanentsponges:aqueous_sponge_on_a_stick"
+        "recipes": "permanentsponges:aqueous_sponge_on_a_stick"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

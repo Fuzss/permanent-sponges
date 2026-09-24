@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "permanentsponges:magmatic_sponge"
+        "recipes": "permanentsponges:magmatic_sponge"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
