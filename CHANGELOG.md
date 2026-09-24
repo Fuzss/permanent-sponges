@@ -10,3 +10,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Update to Minecraft 26.3.x
+- Update the internal ids used by sponge blocks and items
