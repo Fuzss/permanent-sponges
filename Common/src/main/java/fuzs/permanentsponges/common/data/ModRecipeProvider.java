@@ -41,7 +41,7 @@ public class ModRecipeProvider extends AbstractRecipeProvider {
                 .save(this.output);
         ShapelessRecipeBuilder.shapeless(this.items,
                         RecipeCategory.TOOLS,
-                        ModRegistry.HANDHELD_AQUEOUS_SPONGE_ITEM.value())
+                        ModRegistry.AQUEOUS_SPONGE_ITEM.value())
                 .requires(Items.STICK)
                 .requires(ModRegistry.AQUEOUS_SPONGE_BLOCK.value())
                 .unlockedBy(getHasName(ModRegistry.AQUEOUS_SPONGE_BLOCK.value()),
@@ -49,7 +49,7 @@ public class ModRecipeProvider extends AbstractRecipeProvider {
                 .save(this.output);
         ShapelessRecipeBuilder.shapeless(this.items,
                         RecipeCategory.TOOLS,
-                        ModRegistry.HANDHELD_MAGMATIC_SPONGE_ITEM.value())
+                        ModRegistry.MAGMATIC_SPONGE_ITEM.value())
                 .requires(Items.STICK)
                 .requires(ModRegistry.MAGMATIC_SPONGE_BLOCK.value())
                 .unlockedBy(getHasName(ModRegistry.MAGMATIC_SPONGE_BLOCK.value()),

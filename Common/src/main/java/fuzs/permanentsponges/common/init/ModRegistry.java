@@ -18,38 +18,32 @@ import net.minecraft.world.level.material.MapColor;
 
 public class ModRegistry {
     static final RegistryManager REGISTRIES = RegistryManager.from(PermanentSponges.MOD_ID);
-    public static final Holder.Reference<Block> AQUEOUS_SPONGE_BLOCK = REGISTRIES.registerBlock("aqueous_sponge",
+    public static final Holder.Reference<Block> AQUEOUS_SPONGE_BLOCK = REGISTRIES.registerBlock("aqueous_sponge_block",
             (BlockBehaviour.Properties properties) -> new PermanentSpongeBlock(SpongeMaterial.AQUATIC, properties),
             () -> BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_YELLOW)
                     .strength(0.6F)
                     .sound(SoundType.GRASS)
                     .randomTicks());
-    public static final Holder.Reference<Block> MAGMATIC_SPONGE_BLOCK = REGISTRIES.registerBlock("magmatic_sponge",
+    public static final Holder.Reference<Block> MAGMATIC_SPONGE_BLOCK = REGISTRIES.registerBlock("magmatic_sponge_block",
             (BlockBehaviour.Properties properties) -> new PermanentSpongeBlock(SpongeMaterial.MAGMATIC, properties),
             () -> BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_YELLOW)
                     .strength(0.6F)
                     .sound(SoundType.GRASS)
                     .randomTicks());
-    public static final Holder.Reference<Item> AQUEOUS_SPONGE_ITEM = REGISTRIES.registerBlockItem(AQUEOUS_SPONGE_BLOCK);
-    public static final Holder.Reference<Item> MAGMATIC_SPONGE_ITEM = REGISTRIES.registerBlockItem(MAGMATIC_SPONGE_BLOCK);
-    /**
-     * TODO change item id to {@code handheld_aqueous_sponge} for 1.21.5
-     */
-    public static final Holder.Reference<Item> HANDHELD_AQUEOUS_SPONGE_ITEM = REGISTRIES.registerItem(
-            "aqueous_sponge_on_a_stick",
+    public static final Holder.Reference<Item> AQUEOUS_SPONGE_BLOCK_ITEM = REGISTRIES.registerBlockItem(
+            AQUEOUS_SPONGE_BLOCK);
+    public static final Holder.Reference<Item> MAGMATIC_SPONGE_BLOCK_ITEM = REGISTRIES.registerBlockItem(
+            MAGMATIC_SPONGE_BLOCK);
+    public static final Holder.Reference<Item> AQUEOUS_SPONGE_ITEM = REGISTRIES.registerItem("aqueous_sponge",
             (Item.Properties properties) -> new HandheldSpongeItem(SpongeMaterial.AQUATIC, properties),
             () -> new Item.Properties().durability(65));
-    /**
-     * TODO change item id to {@code handheld_magmatic_sponge} for 1.21.5
-     */
-    public static final Holder.Reference<Item> HANDHELD_MAGMATIC_SPONGE_ITEM = REGISTRIES.registerItem(
-            "magmatic_sponge_on_a_stick",
+    public static final Holder.Reference<Item> MAGMATIC_SPONGE_ITEM = REGISTRIES.registerItem("magmatic_sponge",
             (Item.Properties properties) -> new HandheldSpongeItem(SpongeMaterial.MAGMATIC, properties),
             () -> new Item.Properties().durability(129));
     public static final Holder.Reference<CreativeModeTab> CREATIVE_MODE_TAB = REGISTRIES.registerCreativeModeTab(
-            HANDHELD_MAGMATIC_SPONGE_ITEM);
+            MAGMATIC_SPONGE_ITEM);
     public static final Holder.Reference<PoiType> AQUEOUS_SPONGE_POI_TYPE = REGISTRIES.registerPoiType("aqueous_sponge",
             AQUEOUS_SPONGE_BLOCK);
     public static final Holder.Reference<PoiType> MAGMATIC_SPONGE_POI_TYPE = REGISTRIES.registerPoiType(
