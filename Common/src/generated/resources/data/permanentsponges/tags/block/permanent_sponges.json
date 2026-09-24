@@ -1,6 +1,6 @@
 {
   "values": [
-    "permanentsponges:aqueous_sponge",
-    "permanentsponges:magmatic_sponge"
+    "permanentsponges:aqueous_sponge_block",
+    "permanentsponges:magmatic_sponge_block"
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "minecraft:slime_ball",
+    "@": "#minecraft:wool"
+  },
+  "pattern": [
+    " # ",
+    "#@#",
+    " # "
+  ],
+  "result": {
+    "id": "permanentsponges:aqueous_sponge_block"
+  }
+}

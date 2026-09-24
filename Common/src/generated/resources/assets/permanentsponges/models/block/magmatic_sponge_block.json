@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "permanentsponges:block/magmatic_sponge"
+    "all": "permanentsponges:block/magmatic_sponge_block"
   }
 }

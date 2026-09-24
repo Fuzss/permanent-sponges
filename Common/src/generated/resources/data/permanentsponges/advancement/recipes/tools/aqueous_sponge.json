@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_slime_ball": {
+    "has_aqueous_sponge_block": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:slime_ball"
+            "items": "permanentsponges:aqueous_sponge_block"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_slime_ball"
+      "has_aqueous_sponge_block"
     ]
   ],
   "rewards": {

@@ -1,7 +1,7 @@
 {
-  "block.permanentsponges.aqueous_sponge": "Aqueous Sponge",
-  "block.permanentsponges.magmatic_sponge": "Magmatic Sponge",
-  "item.permanentsponges.aqueous_sponge_on_a_stick": "Handheld Aqueous Sponge",
-  "item.permanentsponges.magmatic_sponge_on_a_stick": "Handheld Magmatic Sponge",
+  "block.permanentsponges.aqueous_sponge_block": "Aqueous Sponge Block",
+  "block.permanentsponges.magmatic_sponge_block": "Magmatic Sponge Block",
+  "item.permanentsponges.aqueous_sponge": "Aqueous Sponge",
+  "item.permanentsponges.magmatic_sponge": "Magmatic Sponge",
   "itemGroup.permanentsponges.main": "Permanent Sponges"
 }

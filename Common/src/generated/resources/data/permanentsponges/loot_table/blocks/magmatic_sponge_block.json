@@ -8,11 +8,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "permanentsponges:aqueous_sponge"
+          "name": "permanentsponges:magmatic_sponge_block"
         }
       ],
       "rolls": 1
     }
   ],
-  "random_sequence": "permanentsponges:blocks/aqueous_sponge"
+  "random_sequence": "permanentsponges:blocks/magmatic_sponge_block"
 }

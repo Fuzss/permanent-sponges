@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_aqueous_sponge": {
+    "has_magmatic_sponge_block": {
       "conditions": {
         "items": [
           {
-            "items": "permanentsponges:aqueous_sponge"
+            "items": "permanentsponges:magmatic_sponge_block"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "permanentsponges:aqueous_sponge_on_a_stick"
+        "recipes": "permanentsponges:magmatic_sponge"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_aqueous_sponge"
+      "has_magmatic_sponge_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "permanentsponges:aqueous_sponge_on_a_stick"
+      "permanentsponges:magmatic_sponge"
     ]
   }
 }
